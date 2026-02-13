@@ -1,4 +1,4 @@
-# Data and Knowledge Visualization Systems (SVDC) 📊
+# Data and Knowledge Visualization Systems 📊
 
 Welcome to my repository for the **Data and Knowledge Visualization Systems** course. 
 This space serves as a portfolio and archive for all the work, projects, and exercises developed throughout the semester.

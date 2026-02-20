@@ -9,6 +9,7 @@ This space serves as a portfolio and archive for all the work, projects, and exe
 ---
 
 ## 🎯 Course Objectives
+
 Throughout the semester, this repository will document my progress and learning in the following core topics:
 
 1. **Introduction to Quantitative Data Visualization:** Fundamentals and basic principles.
@@ -24,10 +25,14 @@ Throughout the semester, this repository will document my progress and learning 
 
 * 📁 `PL1/` - Practical Lab 1 exercises and materials.
 * 📁 `PL2/` - Practical Lab 2 exercises and materials.
+* 📁 `PL3/` - Practical Lab 2 exercises and materials.
 
 ---
 
 ## 🛠️ Technologies and Tools Used
+
 * D3.js
 * Python (Pandas, Matplotlib, Seaborn)
 * Tableau / PowerBI
+
+

@@ -1,6 +1,6 @@
 # Data and Knowledge Visualization Systems 📊
 
-Welcome to my repository for the **Data and Knowledge Visualization Systems** course. 
+Welcome to my repository for the **Data and Knowledge Visualization Systems** course.
 This space serves as a portfolio and archive for all the work, projects, and exercises developed throughout the semester.
 
 **Student:** Luis Miguel Pereira Silva  
@@ -23,9 +23,10 @@ Throughout the semester, this repository will document my progress and learning 
 
 ## 📂 Repository Structure
 
-* 📁 `PL1/` - Practical Lab 1 exercises and materials.
-* 📁 `PL2/` - Practical Lab 2 exercises and materials.
-* 📁 `PL3/` - Practical Lab 2 exercises and materials.
+* 📁 `aula1/` - Class 1 exercises and materials.
+* 📁 `aula2/` - Class 2 exercises and materials.
+* 📁 `aula3/` - Class 3 exercises and materials.
+* 📁 `aula4/` - Class 4 exercises and materials.
 
 ---
 
@@ -34,5 +35,3 @@ Throughout the semester, this repository will document my progress and learning 
 * D3.js
 * Python (Pandas, Matplotlib, Seaborn)
 * Tableau / PowerBI
-
-

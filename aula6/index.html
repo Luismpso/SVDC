@@ -2,19 +2,13 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>D3 Tutorial 2</title>
+    <title>D3 Tutorial 2 - Versão Simplificada</title>
     <style>
-        /* Esconder a secção da linha/área quando a página carrega */
-        #area-section {
-            display: none;
-        }
-        
-        /* Dar algum espaço ao menu */
-        #menu-container {
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #f0f0f0;
-        }
+        #area-section { display: none; }
+        #menu-container { margin-bottom: 20px; padding: 10px; background-color: #f0f0f0; }
+        .bar { fill: steelblue; }
+        .area { fill: lightblue; opacity: 0.6; }
+        .line { fill: none; stroke: steelblue; stroke-width: 2; }
     </style>
 </head>
 <body>
@@ -23,7 +17,7 @@
         <label for="grafico-menu"><strong>Escolhe o Gráfico: </strong></label>
         <select id="grafico-menu">
             <option value="barras">Gráfico de Barras</option>
-            <option value="linha">Gráfico de Linha e Área</option>
+            <option value="linha">Gráfico de Área</option>
         </select>
     </div>
 
@@ -33,7 +27,7 @@
     </div>
 
     <div id="area-section">
-        <h2>Gráfico de Linha e Área</h2>
+        <h2>Gráfico de Área</h2>
         <div id="area-chart"></div>
     </div>
 

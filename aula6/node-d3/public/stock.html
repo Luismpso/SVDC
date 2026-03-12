@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>D3 Examples - Stock index area chart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="/">← Back to Home</a>
+
+    <h1>S&P 500 Index</h1>
+
+    <div id="chart"></div>
+
+    <script src="js/d3.min.js"></script>
+    <script src="js/areachart.js"></script>
+    <script>
+        // Read stock data and render area chart
+
+        // We use d3.timeParse() to convert a string into JS date object
+        // Initialize helper function
+        const parseTime = d3.timeParse("%Y-%m-%d")
+
+        d3.csv('data/sp_500_index.csv')
+            .then(data => {
+
+                data.forEach(d => {
+                    d.close = parseFloat(d.close);  // Convert string to float
+                    d.date = parseTime(d.date);     // Convert string to date object
+                });
+                // console.log(data);
+
+                // Initialize and render chart
+                const areaChart = new AreaChart({ parentElement: '#chart' }, data);
+                areaChart.updateVis();
+            })
+            .catch(error => console.error(error));
+    </script>
+</body>
+
+</html>

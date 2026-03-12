@@ -27,6 +27,8 @@ Throughout the semester, this repository will document my progress and learning 
 * 📁 `aula2/` - Class 2 exercises and materials.
 * 📁 `aula3/` - Class 3 exercises and materials.
 * 📁 `aula4/` - Class 4 exercises and materials.
+* 📁 `aula5/` - Class 5 exercises and materials.
+* 📁 `aula6/` - Class 6 exercises and materials.
 
 ---
 

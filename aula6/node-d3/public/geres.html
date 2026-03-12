@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>D3 Examples - Trails scatter chart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="/">← Back to Home</a>
+
+    <h1>Gerês Trails</h1>
+
+    <div id="scatterplot"></div>
+
+    <ul class="legend">
+        <li><span class="legend-e easy"></span> Easy</li>
+        <li><span class="legend-e intermediate"></span> Intermediate</li>
+        <li><span class="legend-e difficult"></span> Difficult</li>
+    </ul>
+
+    <div class="source">
+        Source: Data from <a
+            href="https://turismo.cm-terrasdebouro.pt/listing-category/trilhos-pedestres/">turismo.cm-terrasdebouro.pt</a>
+    </div>
+
+    <script src="js/d3.min.js"></script>
+    <script src="js/scatterplot.js"></script>
+    <script>
+        // Read trails data and render scatterplot
+        d3.csv("data/geres_trails.csv")
+            .then((data) => {
+                // Convert strings to numbers
+                data.forEach((d) => {
+                    d.time = +d.time;
+                    d.distance = +d.distance;
+                });
+
+                // Initialize chart
+                const scatterplot = new Scatterplot(
+                    { parentElement: "#scatterplot" },
+                    data
+                );
+
+                // Show chart
+                scatterplot.updateVis();
+            })
+            .catch((error) => console.error(error));
+    </script>
+</body>
+
+</html>

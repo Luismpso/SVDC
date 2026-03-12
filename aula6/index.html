@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>D3 Tutorial 2</title>
+    <style>
+        /* Esconder a secção da linha/área quando a página carrega */
+        #area-section {
+            display: none;
+        }
+        
+        /* Dar algum espaço ao menu */
+        #menu-container {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="menu-container">
+        <label for="grafico-menu"><strong>Escolhe o Gráfico: </strong></label>
+        <select id="grafico-menu">
+            <option value="barras">Gráfico de Barras</option>
+            <option value="linha">Gráfico de Linha e Área</option>
+        </select>
+    </div>
+
+    <div id="bar-section">
+        <h2>Gráfico de Barras</h2>
+        <div id="chart"></div>
+    </div>
+
+    <div id="area-section">
+        <h2>Gráfico de Linha e Área</h2>
+        <div id="area-chart"></div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
